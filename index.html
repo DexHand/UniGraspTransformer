@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="UniGraspTransformer: Simplified Policy Distillation for Scalable Dexterous Robotic Grasping.">
+    <meta name="keywords" content="UniGraspTransformer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> UniGraspTransformer: Simplified Policy Distillation for Scalable Dexterous Robotic Grasping. </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-2 publication-title"> UniGraspTransformer: Simplified Policy Distillation for Scalable Dexterous Robotic Grasping </h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">
+                            <a href="https://wenbwa.github.io">Wenbo Wang</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?hl=zh-CN&user=-ncz2s8AAAAJ">Fangyun Wei</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=VhToj4wAAAAJ&hl=zh-CN">Lei Zhou</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://openreview.net/profile?id=~Xi_Chen55">Xi Chen</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://openreview.net/profile?id=~Lin_Luo7">Lin Luo</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://openreview.net/profile?id=~Xiaohan_Yi2">Xiaohan Yi</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=NDxNO-QAAAAJ&hl=en">Yizhong Zhang</a>,
+                        </span>
+                        <br>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=z92gIuEAAAAJ&hl=en&oi=ao">Yaobo Liang</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=N4F_3eoAAAAJ&hl=en">Chang Xu</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=djk5l-4AAAAJ&hl=en">Yan Lu</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?hl=en&user=GuqoolgAAAAJ">Jiaolong Yang</a>,
+                        </span>
+                        <span class="author-block">
+                            <a href="https://scholar.google.com/citations?user=h4kYmRYAAAAJ&hl=en">Baining Guo</a>
+                        </span>
+                    </div>
+                    
+                    <br>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Microsoft Research Asia</span>
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- PDF Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/UniGraspTransformer/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fas fa-file-pdf"></i>
+                                    </span>
+                                    <span>Paper</span>
+                                </a>
+                            </span>
+                            <!-- Video Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/UniGraspTransformer/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-youtube"></i>
+                                    </span>
+                                    <span>Video</span>
+                                </a>
+                            </span>
+                            <!-- Dataset Link. -->
+                            <span class="link-block">
+                                <a href="https://wenbwa.github.io/UniGraspTransformer/" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fa fa-database"></i>
+                                    </span>
+                                    <span>Dataset</span>
+                                </a>
+                            </span>
+                            <!-- Code Link. -->
+                            <span class="link-block">
+                                <a href="https://github.com/WenbWa/UniGraspTransformer.git" class="external-link button is-normal is-rounded is-dark">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section" id="system">
+    <div class="container is-max-desktop">
+        <div style="text-align: center;">
+            <img src="assets/sota.png" style="width: 500px; height: auto;" class="center"/>
+        </div>
+        <p>
+            <br>
+            Performance comparison of our <b>UniGraspTransformer(red)</b>, with <b>UniDexGrasp(blue)</b> and <b>UniDexGrasp++(green)</b>, across the <b>state-based(purple)</b> and <b>vision-based(orange)</b> settings. 
+            For each setting, success rates are evaluated on seen objects, unseen objects within seen categories, and entirely unseen objects from unseen categories.
+            <br><br>
+        </p>
+        <hr>
+
+        <div style="text-align: center;">
+            <video poster="" id="grasp_video" autoplay controls muted loop height="100%">
+                <source src="assets/videos/grasp_real.mp4" type="video/mp4">
+            </video>
+            <p>
+                <br>
+                <b>Real-World Deployment of our UniGraspTransformer.</b>
+                <br><br>
+            </p>
+        </div>
+        <hr>
+        
+        <div style="text-align: center;">
+            <video poster="" id="grasp_video" autoplay controls muted loop height="100%">
+                <source src="assets/videos/grasp_simu.mp4" type="video/mp4">
+            </video>
+            <p>
+                <br>
+                <b>Simulation Results of our UniGraspTransformer.</b>
+                <br><br>
+            </p>
+        </div>
+        <hr>
+        
+    </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We introduce UniGraspTransformer, a universal Transformer-based network for dexterous robotic grasping that simplifies training while enhancing scalability and performance. 
+                        Unlike prior methods such as UniDexGrasp++, which require complex, multi-step training pipelines, UniGraspTransformer follows a streamlined process: 
+                        first, dedicated policy networks are trained for individual objects using reinforcement learning to generate successful grasp trajectories; then, these trajectories are distilled into a single, universal network. 
+                        Our approach enables UniGraspTransformer to scale effectively, incorporating up to 12 self-attention blocks for handling thousands of objects with diverse poses. 
+                        Additionally, it generalizes well to both idealized and real-world inputs, evaluated in state-based and vision-based settings. 
+                        Notably, UniGraspTransformer generates a broader range of grasping poses for objects in various shapes and orientations, resulting in more diverse grasp strategies. 
+                        Experimental results demonstrate significant improvements over state-of-the-art, UniDexGrasp++, across various object categories, 
+                        achieving success rate gains of 3.5%, 7.7%, and 10.1% on seen objects, unseen objects within seen categories, and completely unseen objects, respectively, in the vision-based setting.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paper video. -->
+        <!-- <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Project Video</h2>
+                <video poster="" id="grasp_video" controls muted loop height="100%">
+                    <source src="assets/videos/grasp_video.mp4" type="video/mp4">
+                </video>
+                <br><br>
+            </div>
+        </div> -->
+        <!-- Paper video. -->
+        <!-- <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Paper Video</h2>
+                <div class="publication-video">
+                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        
+                </div>
+            </div>
+        </div> -->
+      <!--/ Paper video. -->
+    </div>
+</section>
+
+<hr>
+
+
+<section class="section"  id="UniGraspTransformer">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">UniGraspTransformer</h2>
+        <div style="text-align: center;">
+            <img src="assets/system.png" style="width: 1000px; height: auto;" class="center"/>
+        </div>
+        <p>
+            <br>
+            <b>Overview</b>. 
+            (a) <b>Dedicated policy network training:</b> each individual RL policy network is trained to grasp a specific object with various initial poses. 
+            (b) <b>Grasp trajectory generation:</b> each policy network generates M successful grasp trajectories, forming a trajectory set D. 
+            (c) <b>UniGraspTransformer training:</b> trajectories from D are used to train UniGraspTransformer, a universal grasp network, in a supervised manner. 
+            We investigate two settings—<b>state-based and vision-based</b>—with the primary difference being in the input representation of object state and hand-object distance, as indicated by * in the figure. 
+        </p>
+    </div>
+</section>
+
+
+<section class="section"  id="Experiment Results">
+    <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Experiment Results</h2>
+        <hr>
+        <div style="text-align: center;">
+            <img src="assets/table.png" style="width: 1000px; height: auto;" class="center"/>
+        </div>
+        <p>
+            <br>
+            <b>Universal Policy.</b> Comparison with state-of-the-art methods using a universal model for dexterous robotic grasping across both state-based and vision-based settings, evaluated by success rate. 
+            Evaluation on unseen objects from either seen or unseen categories assesses the models' generalization capability. "Obj." refers to objects, and "Cat." refers to categories.
+            <br><br>
+        </p>
+        <hr>
+        
+
+        <div style="text-align: center;">
+            <img src="assets/diversity_curve.png" style="width: 600px; height: auto;" class="center"/>
+        </div>
+        <p>
+            <br>
+            <b>Quantitative comparison of grasp pose diversity.</b> 
+            Compared to UniDexGrasp++, our UniGraspTransformer demonstrates a broader range of grasping strategies, highlighting its ability to generate diverse grasping poses across a variety of objects.
+            <br><br>
+        </p>
+        <hr>
+        
+        <div style="text-align: center;">
+            <img src="assets/diversity_pose.png" style="width: 1000px; height: auto;" class="center"/>
+        </div>
+        <p>
+            <br>
+            <b>Qualitative comparison of grasp pose diversity.</b> 
+            (a) Using iterative online distillation, UniDexGrasp++ tends to grasp different objects through similar poses, with two middle fingers twisted and floated.
+            (b) Using large-model offline distillation, our UniGraspTransformer adapts to objects of varying shapes, employing a diverse range of grasp poses.
+            <br><br>
+        </p>
+        <hr>
+
+    </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://wenbwa.github.io/UniGraspTransformer/">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://wenbwa.github.io/UniGraspTransformer/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
